@@ -20,6 +20,7 @@ android {
         versionCode 24
         versionName "2.2.3 - ${getGitHash()}"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles "consumer-proguard-rules.pro"
     }
 
     buildTypes {

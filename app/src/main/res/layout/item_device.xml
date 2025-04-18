@@ -5,9 +5,9 @@
     android:layout_width="120dp"
     android:layout_height="120dp"
     android:layout_margin="8dp"
-    app:cardCornerRadius="20dp"
-    app:cardElevation="8dp"
-    app:cardBackgroundColor="#FAFAFA">
+    app:cardCornerRadius="16dp"
+    app:cardElevation="4dp"
+    app:cardBackgroundColor="#FFFFFF">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -46,7 +46,7 @@
             android:id="@+id/deviceNameTextView"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="WALL Device Name"
+            android:text="Device Name"
             android:textSize="14sp"
             android:textColor="#1A1A1A"
             android:fontFamily="sans-serif-condensed"
@@ -64,4 +64,5 @@
             app:layout_constraintEnd_toEndOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
+
 </androidx.cardview.widget.CardView>

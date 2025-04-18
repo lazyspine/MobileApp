@@ -6,13 +6,13 @@
     android:background="@drawable/gradient_background"
     android:padding="16dp">
 
-    <!-- Tiêu đề -->
+    <!-- Title -->
     <TextView
         android:id="@+id/titleTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="MQTT Light Control"
-        android:textSize="26sp"
+        android:textSize="24sp"
         android:textStyle="bold"
         android:textColor="#212121"
         android:letterSpacing="0.02"
@@ -31,23 +31,22 @@
         android:padding="12dp"
         android:layout_marginTop="16dp"
         android:layout_marginBottom="16dp"
-        android:elevation="6dp"
+        android:elevation="4dp"
         app:layout_constraintTop_toBottomOf="@id/titleTextView"
         app:layout_constraintBottom_toTopOf="@id/bottomNavMenu"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
-    <!-- Floating Action Button -->
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/fabAdd"
+    <!-- Add Button -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/addButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:contentDescription="Add new device"
-        android:src="@android:drawable/ic_input_add"
-        app:backgroundTint="@android:color/white"
-        app:rippleColor="#80FFFFFF"
-        app:fabSize="normal"
-        android:elevation="8dp"
+        android:text="Add Device"
+        android:textColor="#FFFFFF"
+        app:backgroundTint="#2196F3"
+        app:cornerRadius="8dp"
+        app:elevation="4dp"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="16dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -57,9 +56,9 @@
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottomNavMenu"
         android:layout_width="0dp"
-        android:layout_height="70dp"
+        android:layout_height="wrap_content"
         android:background="@drawable/rounded_bottom_nav_full"
-        android:elevation="10dp"
+        android:elevation="8dp"
         app:menu="@menu/bottom_nav_menu"
         app:itemIconTint="@color/colors"
         app:itemTextColor="@color/colors"
